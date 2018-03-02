@@ -168,3 +168,26 @@ section .content {
 .alternate-background {
   background: rgb(235, 235, 235);
 }
+
+#about img {
+  margin-top: 2.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 225px;
+  width: 300px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
+}
