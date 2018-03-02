@@ -22,8 +22,29 @@
     padding: 0.75em 0;
     letter-spacing: 1px;
 }
-    #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #fed136; }
+  #mainNav .navbar-nav .nav-item .nav-link.active.about, #mainNav .navbar-nav .nav-item .nav-link:hover.about {
+    color: rgb(65, 170, 230);
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link.active.competitions, #mainNav .navbar-nav .nav-item .nav-link:hover.competitions {
+    color: rgb(140, 200, 60);
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link.active.medias, #mainNav .navbar-nav .nav-item .nav-link:hover.medias {
+    color: rgb(250, 150, 30);
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link.active.team, #mainNav .navbar-nav .nav-item .nav-link:hover.team {
+    color: rgb(185, 30, 50);
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link.active.partners, #mainNav .navbar-nav .nav-item .nav-link:hover.partners {
+    color: rgb(65, 170, 230);
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link.active.contact, #mainNav .navbar-nav .nav-item .nav-link:hover.contact {
+    color: rgb(140, 200, 60);
+  }
 
 @media (min-width: 992px) {
   #mainNav {
