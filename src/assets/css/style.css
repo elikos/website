@@ -164,3 +164,7 @@ section .content {
   margin: 25px auto 25px auto;
   background: linear-gradient(to right, rgb(65, 170, 230) 25%,rgb(140, 200, 60) 25%, rgb(140, 200, 60) 50%, rgb(250, 150, 30) 50%, rgb(250, 150, 30) 75%, rgb(185, 30, 50) 75%);
 }
+
+.alternate-background {
+  background: rgb(235, 235, 235);
+}
