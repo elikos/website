@@ -288,7 +288,7 @@ iframe {
 
 .member-container {
   width: 200px;
-  height: 240px;
+  height: 255px;
   flex-shrink: 0;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -304,7 +304,7 @@ iframe {
 }
 
 .member-container img {
-  width: 75%;
+  width: 85%;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -333,7 +333,7 @@ iframe {
 
 .member-bottom {
   border-radius: 4%;
-  background-color: #333;
+  background-color: rgb(235, 235, 235);
   width: 200px;
   height: 200px;
   display: flex;
@@ -347,10 +347,10 @@ iframe {
 
 .member-bottom div p {
   font-size: 0.8rem;
-  color: rgb(233, 233, 233) !important;
+  
 }
 
 .member-bottom div h5 {
   font-size: 1.1rem;
-  color: rgb(233, 233, 233) !important;
+  
 }
