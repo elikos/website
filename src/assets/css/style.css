@@ -311,25 +311,11 @@ iframe {
   margin-bottom: -35%;
   z-index: 1;
   border-style: solid;
-  border-width: 3px;
-  
+  border-width: 2px;
+  border-color: black;
 }
 
-.a {
-  border-color: rgb(65, 170, 230);
-}
 
-.b {
-  border-color: rgb(140, 200, 60);
-}
-
-.c {
-  border-color: rgb(250, 150, 30);
-}
-
-.d {
-  border-color: rgb(185, 30, 50);
-}
 
 .member-bottom {
   border-radius: 4%;
