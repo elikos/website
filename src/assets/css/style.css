@@ -282,16 +282,16 @@ iframe {
 .team-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .member-container {
-  width: 300px;
-  height: 325px;
+  width: 200px;
+  height: 240px;
   flex-shrink: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -304,28 +304,53 @@ iframe {
 }
 
 .member-container img {
-  width: 65%;
+  width: 75%;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -35%;
   z-index: 1;
   border-style: solid;
-  border-width: 4px;
+  border-width: 3px;
+  
+}
+
+.a {
   border-color: rgb(65, 170, 230);
+}
+
+.b {
+  border-color: rgb(140, 200, 60);
+}
+
+.c {
+  border-color: rgb(250, 150, 30);
+}
+
+.d {
+  border-color: rgb(185, 30, 50);
 }
 
 .member-bottom {
   border-radius: 4%;
   background-color: #333;
-  width: 300px;
+  width: 200px;
   height: 200px;
   display: flex;
   flex-direction: row;
 }
 
-.member-bottom div, .member-bottom div p {
+.member-bottom div {
   align-self: flex-end;
   width: 100%;
+}
+
+.member-bottom div p {
+  font-size: 0.8rem;
+  color: rgb(233, 233, 233) !important;
+}
+
+.member-bottom div h5 {
+  font-size: 1.1rem;
   color: rgb(233, 233, 233) !important;
 }
