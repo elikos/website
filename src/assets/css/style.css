@@ -304,11 +304,9 @@ iframe {
   border-color: black;
 }
 
-
-
 .member-bottom {
   border-radius: 4%;
-  background-color: rgb(235, 235, 235);
+  background-color: white;
   width: 200px;
   height: 200px;
   display: flex;
@@ -327,5 +325,34 @@ iframe {
 
 .member-bottom div h5 {
   font-size: 1.1rem;
-  
+}
+
+.sponsor {
+  width: 250px;
+  height: 175px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0.8em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d4d4d4b7;
+}
+
+.sponsor img {
+  width: 175px;
+  margin: auto;
+}
+
+.sponsor-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1.1em;
+}
+
+.sponsor:hover {
+  transform: scale(1.05);
 }
