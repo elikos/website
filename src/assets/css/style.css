@@ -132,6 +132,10 @@ nav .logo {
   vertical-align: middle;
 }
 
+#title .circle-angle-double-down {
+  color: rgb(70, 72, 66);
+}
+
 #pause {
   display: none;
 }
