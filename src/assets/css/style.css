@@ -4,9 +4,9 @@
   #mainNav .navbar-toggler {
     right: 0;
     padding: 13px;
-    color: white;
+    color: rgb(70, 72, 66);
     border: 0;
-    background-color: #fed136;
+    background-color: rgba(255, 255, 255, 0.7);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: .9rem;
     font-weight: 700;
@@ -130,6 +130,10 @@ nav .logo {
 #title span {
   display: inline-block;
   vertical-align: middle;
+}
+
+#title .circle-angle-double-down {
+  color: rgb(70, 72, 66);
 }
 
 #pause {
