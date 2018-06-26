@@ -1,0 +1,9 @@
+# travis-ci to deploy website to FTP server using git-ftp
+dist: trusty
+language: generic
+addons:
+  apt:
+    packages:
+    - git-ftp
+after_success:
+  - travis_retry ./deploy.sh
