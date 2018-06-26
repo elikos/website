@@ -373,9 +373,11 @@ iframe {
   background-color: #212529;
 }
 
-.falink:link, :visited, :active {
+.bottom a:link,
+.bottom a:visited,
+.bottom a:active {
   color: white;
 }
-.falink:hover {
+.bottom a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
