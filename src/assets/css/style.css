@@ -257,6 +257,11 @@ section .content {
   text-align: center;
 }
 
+#competitions .competition-video, #competitions .competition-photo {
+  margin: 1em auto;
+  width: 488px;
+}
+
 iframe {
   margin-top: 1em;
   margin-bottom: 1em;
