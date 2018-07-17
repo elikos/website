@@ -215,13 +215,13 @@ section .content {
   color: #333;
 }
 
-#competitions .two:hover ~ hr {
+#competitions .two:hover ~ hr, #competitions .two.active ~ hr {
   margin-left: 50%;
   transform: translateX(-50%);
   background: rgb(140, 200, 60);
 }
 
-#competitions .three:hover ~ hr {
+#competitions .three:hover ~ hr, #competitions .three.active ~ hr {
   margin-left: 50%;
   transform: translateX(50%);
   background: rgb(250, 150, 30);
@@ -393,4 +393,8 @@ iframe {
 
 .bottom-link-4 a:hover {
   color: rgba(185, 30, 50, 1.0);
+}
+
+.competition-nav {
+  cursor: pointer;
 }
