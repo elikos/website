@@ -262,6 +262,23 @@ section .content {
   width: 488px;
 }
 
+#competitions .competition {
+  position: relative;
+}
+
+@-webkit-keyframes testa{
+  from {
+    left: 0%;
+    display: initial;
+  }
+
+  to {
+    /* left: auto; */
+    left: 100%;
+    display: none;
+  }
+}
+
 iframe {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -397,4 +414,18 @@ iframe {
 
 .competition-nav {
   cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.left {
+  left: -200%;
+  opacity: 0;
+}
+
+.right {
+  left: 200%;
+  opacity: 0;
 }
