@@ -247,7 +247,7 @@ section .content {
   box-sizing: border-box;
 }
 
-#competitions  .test-container {
+#competitions .competition-navs {
   width: 100%;
   margin: 0;
 }
@@ -416,7 +416,7 @@ iframe {
   cursor: pointer;
 }
 
-.hide {
+.display-none {
   display: none;
 }
 
