@@ -206,7 +206,7 @@ section .content {
   100%{opacity:1}
 }
 
-#competitions a {
+.navigable-section a {
   display: inline-block;
   width: 100px;
   padding: .25rem 0;
@@ -215,23 +215,23 @@ section .content {
   color: #333;
 }
 
-#competitions .two:hover ~ hr, #competitions .two.active ~ hr {
+.navigable-section .two:hover ~ hr, .navigable-section .two.active ~ hr {
   margin-left: 50%;
   transform: translateX(-50%);
   background: rgb(140, 200, 60);
 }
 
-#competitions .three:hover ~ hr, #competitions .three.active ~ hr {
+.navigable-section .three:hover ~ hr, .navigable-section .three.active ~ hr {
   margin-left: 50%;
   transform: translateX(50%);
   background: rgb(250, 150, 30);
 }
 
-#competitions .four:hover ~ hr {
+.navigable-section .four:hover ~ hr {
   margin-left: 75%;
 }
 
-#competitions hr {
+.navigable-section hr {
   height: .25rem;
   width: 100px;
   margin: 0;
@@ -243,16 +243,11 @@ section .content {
   transform: translateX(-150%);
 }
 
-#competitions * {
+.navigable-section * {
   box-sizing: border-box;
 }
 
-#competitions  .test-container {
-  width: 100%;
-  margin: 0;
-}
-
-#competitions ul li {
+.navigable-section ul li {
   display: inline;
   text-align: center;
 }
@@ -299,6 +294,8 @@ iframe {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: relative;
+  margin-top: 35px;
 }
 
 .member-container {
@@ -416,7 +413,11 @@ iframe {
   cursor: pointer;
 }
 
-.hide {
+.team-nav {
+  cursor: pointer;
+}
+
+.display-none {
   display: none;
 }
 
@@ -428,4 +429,16 @@ iframe {
 .right {
   left: 200%;
   opacity: 0;
+}
+
+.full-team-container {
+  margin-top: 20px;
+}
+
+.full-team-container p {
+  margin-top: 15px;
+}
+
+.full-team-container img {
+  margin-top: 15px;
 }

@@ -10,7 +10,7 @@
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="https://use.fontawesome.com/477bec55ae.js"></script>
     <script src="assets/scripts/background-video.js"></script>
-    <script src="assets/scripts/competitions.js"></script>
+    <script src="assets/scripts/years-transitions.js"></script>
     <script src="assets/scripts/images-animations.js"></script>
   </head>
   <body>
@@ -87,22 +87,20 @@
         </div>  
       </section>
 
-      <section id="competitions" class="alternate-background">
+      <section id="competitions" class="alternate-background navigable-section">
         <h1>Compétitions</h1>
         <div class="separator"></div>
         <div class ="content">
           <p>Opérant depuis 1991, l’International Aerial Robotics Competition existe pour repousser les limites de la technologie en robotique aérienne. Des défis, aussi appelés des missions, sont posés à la communauté universitaire du monde entier dans le but de stimuler des avancées technologiques à un rythme rapide. En 2013, 33 équipes de partout dans le monde ont participé à la 6e mission de l’IARC.</p>
+        </div>
 
-          
-        </div>
-        <div class="test-container">
-          <ul>
-            <li class="competition-nav one active" id="competition-2017-nav"><a>2017</a></li>
-            <li class="competition-nav two" id="competition-2016-nav"><a>2016</a></li>
-            <li class="competition-nav three" id="competition-2015-nav"><a>2015</a></li>
-            <hr>
+        <ul>
+          <li class="competition-nav one active" id="competition-2017-nav"><a>2017</a></li>
+          <li class="competition-nav two" id="competition-2016-nav"><a>2016</a></li>
+          <li class="competition-nav three" id="competition-2015-nav"><a>2015</a></li>
+          <hr>
         </ul>
-        </div>
+
         <div class="content">
           <div class="flex-col competition" id="competition-2017">
             <img class="competition-photo" src="assets\img\competitions\team_2017.jpg"></img>
@@ -111,7 +109,7 @@
             </p>
           </div>
 
-          <div class="flex-col competition hide right" id="competition-2016">
+          <div class="flex-col competition display-none right" id="competition-2016">
             <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/L3C6ntc_VUs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <p>
               Lors de l'édition 2016 de l'IARC Élikos a tenté en plus de faire un vol autonome, d'interagir avec les robots au sol ainsi que d'éviter les robots obstacles de manière automnome. Pour déterminer le positionnement, une intégration de l'algorithme de localisation visuelle et inertielle ainsi que de l'optical flow a été effectuée. Par la suite, la détection des robots cibles et des robots obstacles a été améliorée. Finalement, une intelligence artificielle a été développée afin de prendre les meilleures décisions possibles lors de la compétition, connaissant sa propre position ainsi que la position des robots cibles et obstacles.
@@ -122,7 +120,7 @@
             </p>
           </div>
 
-          <div class="flex-col competition hide right" id="competition-2015">
+          <div class="flex-col competition display-none right" id="competition-2015">
             <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/890d9nOqios?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <p>
               Lors de la compétition 2015, nous avons eu l'occasion de démontrer nos premiers pas vers l'interaction avec les robots au sol en suivant un robot en mouvement. La conception du véhicule a été revue pour intégrer une plateforme Intel NUC i5, plus de caméras ainsi qu'un altimètre laser.
@@ -136,102 +134,134 @@
         </div>
       </section>
 
-      <!--<section id="medias">
-        <h1>Médias</h1>
-        <div class="separator"></div>
-        <div class ="content">
-          <p>...</p>
-        </div>        
-      </section>-->
+      <section id="team" class="navigable-section">
+        <div>
+          <h1>Équipe</h1>
+          <div class="separator"></div>
 
-      <section id="team">
-        <h1>Équipe</h1>
-        <div class="separator"></div>
-        <div class ="content">
-          <div class="team-container">
-            <div class="member-container">
-              <img class="a" src="./assets/img/team/2017/chrichri.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Christophe Bédard</h3>
-                  <p>Directeur général</p>
+          <ul>
+            <li class="team-nav one active" id="team-2017-nav"><a>2017</a></li>
+            <li class="team-nav two" id="team-2016-nav"><a>2016</a></li>
+            <li class="team-nav three" id="team-2015-nav"><a>2015</a></li>
+            <hr>
+          </ul>
+          
+          <div class ="content">
+            <div class="team team-container" id="team-2017">
+
+              <div class="member-container">
+                <img class="a" src="./assets/img/team/2017/chrichri.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Christophe Bédard</h3>
+                    <p>Directeur général</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="b" src="./assets/img/team/2017/eva.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Eva Terriault</h3>
-                  <p>Directrice administrative</p>
+
+              <div class="member-container">
+                <img class="b" src="./assets/img/team/2017/eva.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Eva Terriault</h3>
+                    <p>Directrice administrative</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="c" src="./assets/img/team/2017/py.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Pierre-Yves Lajoie</h3>
-                  <p>Directeur technique</p>
+
+              <div class="member-container">
+                <img class="c" src="./assets/img/team/2017/py.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Pierre-Yves Lajoie</h3>
+                    <p>Directeur technique</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="d" src="./assets/img/team/2017/oli.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Olivier St-Amour</h3>
-                  <p>Chargé de projet</p>
+
+              <div class="member-container">
+                <img class="d" src="./assets/img/team/2017/oli.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Olivier St-Amour</h3>
+                    <p>Chargé de projet</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="e" src="./assets/img/team/2017/justine.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Justine Pepin</h3>
-                  <p>Chargée de projet</p>
+
+              <div class="member-container">
+                <img class="e" src="./assets/img/team/2017/justine.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Justine Pepin</h3>
+                    <p>Chargée de projet</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="f" src="./assets/img/team/2017/felix.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Félix Pepin</h3>
-                  <p>Chargé de projet</p>
+
+              <div class="member-container">
+                <img class="f" src="./assets/img/team/2017/felix.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Félix Pepin</h3>
+                    <p>Chargé de projet</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="g" src="./assets/img/team/2017/sverige.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Arnaud Paré-Vogt</h3>
-                  <p>Chargé de projet</p>
+
+              <div class="member-container">
+                <img class="g" src="./assets/img/team/2017/sverige.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Arnaud Paré-Vogt</h3>
+                    <p>Chargé de projet</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="h" src="./assets/img/team/2017/riad.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Riad Gahlouz</h3>
-                  <p>Chargé de projet et Trésorier</p>
+
+              <div class="member-container">
+                <img class="h" src="./assets/img/team/2017/riad.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Riad Gahlouz</h3>
+                    <p>Chargé de projet et Trésorier</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="member-container">
-              <img class="i" src="./assets/img/team/2017/max.jpg"></img>
-              <div class="member-bottom">
-                <div>
-                  <h5>Max Colombié</h3>
-                  <p>Responsable marketing</p>
+
+              <div class="member-container">
+                <img class="i" src="./assets/img/team/2017/max.jpg"></img>
+                <div class="member-bottom">
+                  <div>
+                    <h5>Max Colombié</h3>
+                    <p>Responsable marketing</p>
+                  </div>
                 </div>
               </div>
+
+              <div class="full-team-container">
+                <img src="./assets/img/team/team-2017.jpg" style="max-width: 100%; height: auto;">
+                <p>De gauche à droite : Riad Gahlouz, Félix Pepin, Olivier St-Amour, Eva Terriault, Max Colombié, Christophe Bédard, Arnaud Paré-Vogt, Justine Pepin, Pierre-Yves Lajoie</p>
+              </div>
+              
             </div>
+
+            <div class="team team-container display-none right" id="team-2016">
+              <div class="full-team-container">
+                <img src="./assets/img/team/team-2016.jpg" style="max-width: 100%; height: auto;">
+                <p>De gauche à droite : Riad Gahlouz, Félix Pepin, Olivier St-Amour, Eva Terriault, Max Colombié, Christophe Bédard, Arnaud Paré-Vogt, Justine Pepin, Pierre-Yves Lajoie</p>
+              </div>
+            </div>
+
+            <div class="team team-container display-none right" id="team-2015">
+              <div class="full-team-container">
+                <img src="./assets/img/team/team-2015.jpg" style="max-width: 100%; height: auto;">
+                <p>De gauche à droite : Riad Gahlouz, Félix Pepin, Olivier St-Amour, Eva Terriault, Max Colombié, Christophe Bédard, Arnaud Paré-Vogt, Justine Pepin, Pierre-Yves Lajoie</p>
+              </div>
+            </div>
+            
           </div>
-        </div>        
+        </div>      
       </section>
 
       <section id="partners" class="alternate-background">
