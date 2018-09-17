@@ -294,6 +294,8 @@ iframe {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: relative;
+  margin-top: 35px;
 }
 
 .member-container {
@@ -427,4 +429,16 @@ iframe {
 .right {
   left: 200%;
   opacity: 0;
+}
+
+.full-team-container {
+  margin-top: 20px;
+}
+
+.full-team-container p {
+  margin-top: 15px;
+}
+
+.full-team-container img {
+  margin-top: 15px;
 }
