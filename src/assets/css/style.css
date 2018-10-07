@@ -46,6 +46,10 @@
     color: rgb(140, 200, 60);
   }
 
+  #mainNav .navbar-nav .nav-item .nav-link.active.language, #mainNav .navbar-nav .nav-item .nav-link:hover.language {
+    color: rgb(250, 150, 30);
+  }
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
