@@ -3,7 +3,7 @@
 
 # Set preferences here
 # Some environment variables have to be set separately (FTP_URL, FTP_USER, and FTP_PASSWORD)
-FTP_REMOTE_ROOT=nova_html/new/
+FTP_REMOTE_ROOT=nova_html/
 FTP_SYNC_ROOT=src/
 
 # Set git-ftp parameters
