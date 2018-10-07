@@ -11,7 +11,7 @@ var config = {
     remoteRoot: '/nova_html/',
     include: ['*', '**/*'],
     exclude: [],
-    deleteRemote: false
+    deleteRemote: true
 }
 
 ftpDeploy.deploy(config)
