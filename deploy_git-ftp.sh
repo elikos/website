@@ -1,5 +1,7 @@
 #!/bin/sh
-# Deploy to FTP server using git-ftp
+## Deploy to FTP server using git-ftp
+# See git-ftp: https://github.com/git-ftp/git-ftp
+# First, install git-ftp: https://github.com/git-ftp/git-ftp/blob/master/INSTALL.md
 
 # Set preferences here
 # Some environment variables have to be set separately (FTP_URL, FTP_USER, and FTP_PASSWORD)
