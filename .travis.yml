@@ -1,12 +1,10 @@
-# travis-ci to deploy website to FTP server using git-ftp
+# travis-ci to deploy website to FTP server using ftp-deploy
 dist: trusty
-language: generic
-addons:
-  apt:
-    packages:
-    - git-ftp
-branches:
-  only:
-    - master
-after_success:
-  - travis_retry ./deploy.sh
+language: node_js
+node_js:
+  - "stable"
+# branches:
+#   only:
+#     - master
+# after_success:
+#   - npm run deploy
