@@ -413,6 +413,10 @@ iframe {
   color: rgba(185, 30, 50, 1.0);
 }
 
+.bottom-link-5 a:hover {
+  color: rgba(65, 170, 230, 1.0);
+}
+
 .competition-nav {
   cursor: pointer;
 }
