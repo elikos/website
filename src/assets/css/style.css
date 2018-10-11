@@ -447,5 +447,7 @@ iframe {
 }
 
 .full-team-container img {
+  max-width: 100%;
+  height: auto;
   margin-top: 15px;
 }
