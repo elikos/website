@@ -1,6 +1,6 @@
 $(function() {
-    initTransitions("competition");
-    initTransitions("team");
+    initTransitions("competition", [2017, 2016, 2015, 2014]);
+    initTransitions("team", [2018, 2017, 2016, 2015]);
 });
 
 function navClickTansition(event, navs, contentDivs) {
@@ -37,8 +37,7 @@ function navClickTansition(event, navs, contentDivs) {
     });
 }
 
-function initTransitions(keyword) {
-    const years = [2017, 2016, 2015];
+function initTransitions(keyword, years) {
     const contentDivs = Array.from(years, year => $('#' + keyword + '-' + year));
     const navs = Array.from(years, year => $('#' + keyword + '-' + year + '-nav'));
 
