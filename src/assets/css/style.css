@@ -220,19 +220,25 @@ section .content {
 
 .navigable-section .two:hover ~ hr, .navigable-section .two.active ~ hr {
   margin-left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-100%);
   background: rgb(140, 200, 60);
 }
 
 .navigable-section .three:hover ~ hr, .navigable-section .three.active ~ hr {
   margin-left: 50%;
-  transform: translateX(50%);
+  transform: translateX(0%);
   background: rgb(250, 150, 30);
 }
 
-.navigable-section .four:hover ~ hr {
-  margin-left: 75%;
+.navigable-section .four:hover ~ hr, .navigable-section .four.active ~ hr {
+  margin-left: 50%;
+  transform: translateX(100%);
+  background: rgb(185, 30, 50);
 }
+
+/* .navigable-section .four:hover ~ hr {
+  margin-left: 75%;
+} */
 
 .navigable-section hr {
   height: .25rem;
@@ -243,7 +249,7 @@ section .content {
   transition: .3s ease-in-out;
 
   margin-left: 50%;
-  transform: translateX(-150%);
+  transform: translateX(-200%);
 }
 
 .navigable-section * {
@@ -307,7 +313,9 @@ iframe {
   flex-shrink: 0;
   margin-top: 20px;
   margin-bottom: 20px;
-  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-flex;
   flex-direction: column;
 }
 
