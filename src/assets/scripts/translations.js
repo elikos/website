@@ -37,6 +37,7 @@ $.getJSON("assets/locales/en/translation.json", function(enTranslation) {
         }
         i18next.changeLanguage(newLanguage);
         $('body').localize();
+        $('html').attr('lang', newLanguage);
       });
     });
   });
