@@ -21,6 +21,7 @@
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 0.75em 0;
     letter-spacing: 1px;
+    cursor: pointer;
 }
   #mainNav .navbar-nav .nav-item .nav-link.active.about, #mainNav .navbar-nav .nav-item .nav-link:hover.about {
     color: rgb(65, 170, 230);

@@ -1,0 +1,70 @@
+{
+    "nav": {
+        "about": "About",
+        "competitions": "Competitions",
+        "team": "Team",
+        "partners": "Sponsors",
+        "contact": "Contact",
+        "language": "Français"
+    },
+    "video": {
+        "title": "Polytechnique Montréal"
+    },
+    "about": {
+        "title": "Who are we?",
+        "description1": "Elikos is an engineering student club founded in 2013 whose goal is to innovate in the field of aerial robotics. The members of the team come from many different engineering fields and share a common passion for multicopters.",
+        "description2": "The team competed annually in the ",
+        "description3": " from 2014 to 2018 and ranked first in North America in 2014 and 2015, and ranked second in 2016. In 2019, Elikos will compete in the "
+    },
+    "competitions": {
+        "title": "Competitions",
+        "description": "Since 1991, the International Aerial Robotics Competition (IARC) aims to push the boundaries of aerial robotic technology. Certain challenges, or missions, are given to the global university community in order to stimulate technological advancement. In 2013, 33 teams from around the world participated in the 6th IARC mission.",
+        "2017": {
+            "content": "The 2017 delegation with the best presentation award. From left to right: Olivier St-Amour, Christophe Bédard, Pierre-Yves Lajoie, Justine Pepin, Eva Terriault, Arnaud Paré-Vogt."
+        },
+        "2016": {
+            "content": "During the 2016 edition of the IARC, Elikos attempted to fly autonomously, interact with ground robots, and avoid obstacles. For localisation, our own visual-inertial localisation algorith was fused with the on-board optical flow sensor. Target and obstacle robot detection was also improved. Finally, a decision-making module was developed in order to make optimal decisions according to the position of the drone and ground robots.",
+            "photo": "The 2016 delegation with the most innovative design award. From left to right: Eva Terriault, Max Colombié, Olivier St-Amour, Antonio Sanniravong, Pierre-Yves Lajoie, Alex Latulipe Loiselle, David Binet, Justine Pepin, Christophe Bédard."
+        },
+        "2015": {
+            "content": "During the 2015 edition of the IARC, we had the opportunity to demonstrate autonomous tracking and following of a ground robot. On the structural side, we switched to a custom platform to integrate an Intel NUC i5, more cameras, as well as a laser altimeter.",
+            "photo": "The 2015 delegation with the best t-shirt, best system integration and best presentation awards. From left to right: Jean-Alexandre Barszcz, André Phu-Van Nguyen, Eva Terriault, Antonio Sanniravong, Alexandre Borowczyck, Alex Latulipe Loiselle, Laurier Loiselle and Christophe Bédard."
+        },
+        "2014": {
+            "content": "During the 2014 edition, the first one of mission 7 and Elikos' first competition, the team demonstrated autonomous takeoff and landing."
+        }
+    },
+    "team": {
+        "title": "Team",
+        "2018": {
+            "photo": "The team for 2018-2019!"
+        },
+        "2017": {
+            "teamLead": "Team Lead",
+            "logisticsLead": "Logistics Lead",
+            "techLead": "Technical Lead",
+            "projectLead": "Project Lead",
+            "projectLeadF": "Project Lead",
+            "projectLeadTreasurer": "Project Lead and Treasurer",
+            "marketingCoordinator": "Marketing Coordinator",
+            "photo": "From left to right: Riad Gahlouz, Félix Pepin, Olivier St-Amour, Eva Terriault, Max Colombié, Christophe Bédard, Arnaud Paré-Vogt, Justine Pepin, Pierre-Yves Lajoie"
+        },
+        "2016": {
+            "photo": "From left to right: Eva Terriault, Max Colombié, Olivier St-Amour, Antonio Sanniravong, Pierre-Yves Lajoie, Alex Latulipe Loiselle, David Binet, Justine Pepin, Christophe Bédard"
+        },
+        "2015": {
+            "photo": "From left to right: Jean-Alexandre Barszcz, Christophe Bédard, Constant Rietsch, Alexandre Borowczyck, Antoine Mignon, André Phu-Van Nguyen, Eva Terriault, Laurier Loiselle, Antonio Sanniravong, Alex Latulipe Loiselle"
+        }
+    },
+    "partners": {
+        "title": "Sponsors",
+        "platinum": "Platinum",
+        "gold": "Gold",
+        "silver": "Silver",
+        "bronze": "Bronze"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Please do not hesitate to contact us if you have any questions!"
+    }
+}
