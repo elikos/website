@@ -9,6 +9,8 @@
     <script src="assets/js/jquery-3.2.1.js"></script>
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="https://use.fontawesome.com/477bec55ae.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js" ></script>
     <script src="assets/scripts/background-video.js"></script>
     <script src="assets/scripts/years-transitions.js"></script>
     <script src="assets/scripts/images-animations.js"></script>
@@ -16,9 +18,6 @@
     <script src="assets/scripts/konami.fr.js"></script>
   </head>
   <body>
-    <header>
-    </header>
-    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -30,25 +29,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger about" href="#about">À propos</a>
+              <a class="nav-link js-scroll-trigger about" href="#about" data-i18n="nav.about"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger competitions" href="#competitions">Compétitions</a>
+              <a class="nav-link js-scroll-trigger competitions" href="#competitions" data-i18n="nav.competitions"></a>
             </li>
             <!--<li class="nav-item">
-              <a class="nav-link js-scroll-trigger medias" href="#medias">Médias</a>
+              <a class="nav-link js-scroll-trigger medias" href="#medias" data-i18n="nav.medias"></a>
             </li>-->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger team" href="#team">Équipe</a>
+              <a class="nav-link js-scroll-trigger team" href="#team" data-i18n="nav.team"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger partners" href="#partners">Partenaires</a>
+              <a class="nav-link js-scroll-trigger partners" href="#partners" data-i18n="nav.partners"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger contact" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger contact" href="#contact" data-i18n="nav.contact"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger language" href="en">English</a>
+              <a class="nav-link js-scroll-trigger language" href="en" data-i18n="nav.language"></a>
             </li>
           </ul>
         </div>
@@ -63,7 +62,7 @@
         </video>
         <div id="title">
           <img src="assets/img/logo.png" class="logo">
-          <p>Polytechnique Montréal</p>
+          <p data-i18n="video.title"></p>
           
           <div>
             <a class="js-scroll-trigger" href="#about">
@@ -80,11 +79,17 @@
       </div>
 
       <section id="about">
-        <h1>Qui sommes-nous?</h1>
+        <h1 data-i18n="about.title"></h1>
         <div class="separator"></div>
         <div class ="content">
-          <p>Élikos est une société technique de Polytechnique Montréal créée en novembre 2013 dont le but est de promouvoir les multirotors autonomes dans le milieu universitaire. Les étudiants membres de l'équipe proviennent de multiples programmes de génie et sont unis par une passion commune pour les multicoptères.</p>
-          <p>L'équipe a participé annuellement à l'<a href="http://www.aerialroboticscompetition.org/">International Aerial Robotics Competition</a> de 2014 à 2018 et a obtenu la première place en Amérique du Nord en 2014 et 2015, ainsi qu'une seconde position en 2016. En 2019, Élikos participera à la <a href="https://www.unmannedsystems.ca/home/students/student-competition-details/">Unmanned Systems Canada Student UAS</a>.</p>
+          <p data-i18n="about.description1"></p>
+          <p>
+            <span data-i18n="about.description2"></span>
+            <a href="http://www.aerialroboticscompetition.org/">International Aerial Robotics Competition</a>
+            <span data-i18n="about.description3"></span>
+            <a href="https://www.unmannedsystems.ca/home/students/student-competition-details/">Unmanned Systems Canada Student UAS</a>
+            .
+          </p>
         </div>
         <div class="img-row">
           <img class="hide" src="./assets/img/quad2017.jpg">
@@ -94,10 +99,10 @@
       </section>
 
       <section id="competitions" class="alternate-background navigable-section">
-        <h1>Compétitions</h1>
+        <h1 data-i18n="competitions.title"></h1>
         <div class="separator"></div>
         <div class ="content">
-          <p>Opérant depuis 1991, l’International Aerial Robotics Competition existe pour repousser les limites de la technologie en robotique aérienne. Des défis, aussi appelés des missions, sont posés à la communauté universitaire du monde entier dans le but de stimuler des avancées technologiques à un rythme rapide. En 2013, 33 équipes de partout dans le monde ont participé à la 6e mission de l’IARC.</p>
+          <p data-i18n="competitions.description"></p>
         </div>
 
         <ul>
@@ -111,38 +116,26 @@
         <div class="content">
           <div class="flex-col competition" id="competition-2017">
             <img class="competition-photo" src="assets/img/competitions/compe_2017.jpg"></img>
-            <p>
-              La délégation 2017 avec le prix de la meilleure présentation. De gauche à droite : Olivier St-Amour, Christophe Bédard, Pierre-Yves Lajoie, Justine Pepin, Eva Terriault, Arnaud Paré-Vogt.
-            </p>
+            <p data-i18n="competitions.2017.content"></p>
           </div>
 
           <div class="flex-col competition display-none right" id="competition-2016">
             <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/L3C6ntc_VUs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <p>
-              Lors de l'édition 2016 de l'IARC, Élikos a tenté en plus de faire un vol autonome, d'interagir avec les robots au sol ainsi que d'éviter les robots obstacles de manière automnome. Pour déterminer le positionnement, une intégration de l'algorithme de localisation visuelle et inertielle ainsi que de l'optical flow a été effectuée. Par la suite, la détection des robots cibles et des robots obstacles a été améliorée. Finalement, une intelligence artificielle a été développée afin de prendre les meilleures décisions possibles lors de la compétition, connaissant sa propre position ainsi que la position des robots cibles et obstacles.
-            </p>
+            <p data-i18n="competitions.2016.content"></p>
             <img class="competition-photo" src="assets/img/competitions/team_2016.jpg"></img>
-            <p>
-              La délégation 2016 avec le prix du design le plus inovateur. De gauche à droite : Eva Terriault, Max Colombié, Olivier St-Amour, Antonio Sanniravong, Pierre-Yves Lajoie, Alex Latulipe Loiselle, David Binet, Justine Pepin, Christophe Bédard.
-            </p>
+            <p data-i18n="competitions.2016.photo"></p>
           </div>
 
           <div class="flex-col competition display-none right" id="competition-2015">
             <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/890d9nOqios?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <p>
-              Lors de la compétition 2015, nous avons eu l'occasion de démontrer nos premiers pas vers l'interaction avec les robots au sol en suivant un robot en mouvement. La conception du véhicule a été revue pour intégrer une plateforme Intel NUC i5, plus de caméras ainsi qu'un altimètre laser.
-            </p>
+            <p data-i18n="competitions.2015.content"></p>
             <img class="competition-photo" src="assets/img/competitions/compe_2015.jpg"></img>
-            <p>
-              La délégation 2015 avec les prix du meilleur t-shirt, la meilleur intégration de systèmes et la meilleure présentation orale. De gauche à droite : Jean-Alexandre Barszcz, André Phu-Van Nguyen, Eva Terriault, Antonio Sanniravong, Alexandre Borowczyck, Alex Latulipe Loiselle, Laurier Loiselle et Christophe Bédard.
-            </p>
+            <p data-i18n="competitions.2015.photo"></p>
           </div>
 
           <div class="flex-col competition display-none right" id="competition-2014">
             <img class="competition-photo" src="assets/img/competitions/compe_2014.jpg"></img>
-            <p>
-              Lors de la compétition 2014, la première édition de la mission 7 de l'IARC et la première participation à une compétition pour Élikos, nous avons démontré un décollage et atterrissage autonome.
-            </p>
+            <p data-i18n="competitions.2014.content"></p>
           </div>
 
         </div>
@@ -166,7 +159,7 @@
             <div class="team team-container" id="team-2018">
               <div class="full-team-container">
                 <img src="./assets/img/team/team-2018.jpg">
-                <p>La nouvelle équipe pour 2018-2019!</p>
+                <p data-i18n="team.2018.photo"></p>
               </div>
             </div>
 
@@ -177,7 +170,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Christophe Bédard</h3>
-                    <p>Directeur général</p>
+                    <p data-i18n="team.2017.teamLead"></p>
                   </div>
                 </div>
               </div>
@@ -187,7 +180,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Eva Terriault</h3>
-                    <p>Directrice administrative</p>
+                    <p data-i18n="team.2017.logisticsLead"></p>
                   </div>
                 </div>
               </div>
@@ -197,7 +190,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Pierre-Yves Lajoie</h3>
-                    <p>Directeur technique</p>
+                    <p data-i18n="team.2017.techLead"></p>
                   </div>
                 </div>
               </div>
@@ -207,7 +200,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Olivier St-Amour</h3>
-                    <p>Chargé de projet</p>
+                    <p data-i18n="team.2017.projectLead"></p>
                   </div>
                 </div>
               </div>
@@ -217,7 +210,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Justine Pepin</h3>
-                    <p>Chargée de projet</p>
+                    <p data-i18n="team.2017.projectLeadF"></p>
                   </div>
                 </div>
               </div>
@@ -227,7 +220,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Félix Pepin</h3>
-                    <p>Chargé de projet</p>
+                    <p data-i18n="team.2017.projectLead"></p>
                   </div>
                 </div>
               </div>
@@ -237,7 +230,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Arnaud Paré-Vogt</h3>
-                    <p>Chargé de projet</p>
+                    <p data-i18n="team.2017.projectLead"></p>
                   </div>
                 </div>
               </div>
@@ -247,7 +240,7 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Riad Gahlouz</h3>
-                    <p>Chargé de projet et Trésorier</p>
+                    <p data-i18n="team.2017.projectLeadTreasurer"></p>
                   </div>
                 </div>
               </div>
@@ -257,14 +250,14 @@
                 <div class="member-bottom">
                   <div>
                     <h5>Max Colombié</h3>
-                    <p>Responsable marketing</p>
+                    <p data-i18n="team.2017.marketingCoordinator"></p>
                   </div>
                 </div>
               </div>
 
               <div class="full-team-container">
                 <img src="./assets/img/team/team-2017.jpg">
-                <p>De gauche à droite : Riad Gahlouz, Félix Pepin, Olivier St-Amour, Eva Terriault, Max Colombié, Christophe Bédard, Arnaud Paré-Vogt, Justine Pepin, Pierre-Yves Lajoie</p>
+                <p data-i18n="team.2017.photo"></p>
               </div>
               
             </div>
@@ -272,14 +265,14 @@
             <div class="team team-container display-none right" id="team-2016">
               <div class="full-team-container">
                 <img src="./assets/img/team/team-2016.jpg">
-                <p>De gauche à droite : Eva Terriault, Max Colombié, Olivier St-Amour, Antonio Sanniravong, Pierre-Yves Lajoie, Alex Latulipe Loiselle, David Binet, Justine Pepin, Christophe Bédard</p>
+                <p data-i18n="team.2016.photo"></p>
               </div>
             </div>
 
             <div class="team team-container display-none right" id="team-2015">
               <div class="full-team-container">
                 <img src="./assets/img/team/team-2015.jpg">
-                <p>De gauche à droite : Jean-Alexandre Barszcz, Christophe Bédard, Constant Rietsch, Alexandre Borowczyck, Antoine Mignon, André Phu-Van Nguyen, Eva Terriault, Laurier Loiselle, Antonio Sanniravong, Alex Latulipe Loiselle</p>
+                <p data-i18n="team.2015.photo"></p>
               </div>
             </div>
             
@@ -288,10 +281,10 @@
       </section>
 
       <section id="partners" class="alternate-background">
-        <h1>Partenaires</h1>
+        <h1 data-i18n="partners.title"></h1>
         <div class="separator"></div>
         <div class ="content">
-          <h4>Platine</h4>
+          <h4 data-i18n="partners.platinum"></h4>
           <div class="sponsor-row">
             <a target="_blank" href="https://www.polymtl.ca/">
               <div class="sponsor">
@@ -300,7 +293,7 @@
             </a>
           </div>
 
-          <h4>Or</h4>
+          <h4 data-i18n="partners.gold"></h4>
           <div class="sponsor-row">
             <a target="_blank" href="https://www.desjardins.com/ca/">
               <div class="sponsor">
@@ -314,7 +307,7 @@
             </a>
           </div>
 
-          <h4>Argent</h4>
+          <h4 data-i18n="partners.silver"></h4>
           <div class="sponsor-row">
             <a target="_blank" href="https://www.solidworks.com/">
               <div class="sponsor">
@@ -333,7 +326,7 @@
             </a>
           </div>
 
-          <h4>Bronze</h4>
+          <h4 data-i18n="partners.bronze"></h4>
           <div class="sponsor-row">
             <a target="_blank" href="https://www.aep.polymtl.ca/">
               <div class="sponsor">
@@ -345,10 +338,10 @@
       </section>
 
       <section id="contact">
-        <h1>Contact</h1>
+        <h1 data-i18n="contact.title"></h1>
         <div class="separator"></div>
         <div class ="content">
-          <p>Pour toute question, n'hésitez pas à nous contacter!</p>
+          <p data-i18n="contact.description"></p>
           <div class="row" style="margin-top: 3em;">
             <div class="col-lg-4 ml-auto text-center">
               <i class="fa fa-building fa-3x mb-3 sr-contact"></i>
@@ -396,5 +389,6 @@
     </footer>
   </body>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/scripts/translations.js"></script>
   <script src="assets/scripts/navigation-bar.js"></script>
 </html>
