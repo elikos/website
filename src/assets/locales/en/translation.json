@@ -66,5 +66,8 @@
     "contact": {
         "title": "Contact",
         "description": "Please do not hesitate to contact us if you have any questions!"
+    },
+    "bottom": {
+        "by": "By"
     }
 }
