@@ -168,6 +168,20 @@ nav .logo {
   display: none;
 }
 
+.scroll-down-button {
+  animation: MoveUpDown 2s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
 section {
   padding: 128px 0 128px 0;
   margin-left: auto;
