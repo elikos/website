@@ -1,55 +1,64 @@
 /*** NAVIGATION ***/
 #mainNav {
-  background-color: #212529; color: rgba(255, 255, 255, 0.7); }
-  #mainNav .navbar-toggler {
-    right: 0;
-    padding: 13px;
-    color: rgb(70, 72, 66);
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: .9rem;
-    font-weight: 700;
-    text-transform: uppercase; }
-  #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
-    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: white; }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 0.75em 0;
-    letter-spacing: 1px;
-    cursor: pointer;
+  background-color: #212529; color: rgba(255, 255, 255, 0.7);
 }
-  #mainNav .navbar-nav .nav-item .nav-link.active.about, #mainNav .navbar-nav .nav-item .nav-link:hover.about {
-    color: rgb(65, 170, 230);
-  }
 
-  #mainNav .navbar-nav .nav-item .nav-link.active.competitions, #mainNav .navbar-nav .nav-item .nav-link:hover.competitions {
-    color: rgb(140, 200, 60);
-  }
+#mainNav .navbar-toggler {
+  right: 0;
+  padding: 13px;
+  color: rgb(70, 72, 66);
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+  
+#mainNav .navbar-brand {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
 
-  #mainNav .navbar-nav .nav-item .nav-link.active.medias, #mainNav .navbar-nav .nav-item .nav-link:hover.medias {
-    color: rgb(250, 150, 30);
-  }
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: white;
+}
 
-  #mainNav .navbar-nav .nav-item .nav-link.active.team, #mainNav .navbar-nav .nav-item .nav-link:hover.team {
-    color: rgb(185, 30, 50);
-  }
+#mainNav .navbar-nav .nav-item .nav-link {
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
 
-  #mainNav .navbar-nav .nav-item .nav-link.active.partners, #mainNav .navbar-nav .nav-item .nav-link:hover.partners {
-    color: rgb(65, 170, 230);
-  }
+#mainNav .navbar-nav .nav-item .nav-link.active.about, #mainNav .navbar-nav .nav-item .nav-link:hover.about {
+  color: rgb(65, 170, 230);
+}
 
-  #mainNav .navbar-nav .nav-item .nav-link.active.contact, #mainNav .navbar-nav .nav-item .nav-link:hover.contact {
-    color: rgb(140, 200, 60);
-  }
+#mainNav .navbar-nav .nav-item .nav-link.active.competitions, #mainNav .navbar-nav .nav-item .nav-link:hover.competitions {
+  color: rgb(140, 200, 60);
+}
 
-  #mainNav .navbar-nav .nav-item .nav-link.active.language, #mainNav .navbar-nav .nav-item .nav-link:hover.language {
-    color: rgb(250, 150, 30);
-  }
+#mainNav .navbar-nav .nav-item .nav-link.active.medias, #mainNav .navbar-nav .nav-item .nav-link:hover.medias {
+  color: rgb(250, 150, 30);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active.team, #mainNav .navbar-nav .nav-item .nav-link:hover.team {
+  color: rgb(185, 30, 50);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active.partners, #mainNav .navbar-nav .nav-item .nav-link:hover.partners {
+  color: rgb(65, 170, 230);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active.contact, #mainNav .navbar-nav .nav-item .nav-link:hover.contact {
+  color: rgb(140, 200, 60);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active.language, #mainNav .navbar-nav .nav-item .nav-link:hover.language {
+  color: rgb(250, 150, 30);
+}
 
 @media (min-width: 992px) {
   #mainNav {
@@ -59,30 +68,40 @@
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent; }
-    #mainNav .navbar-brand {
-      font-size: 1.75em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
-    #mainNav .navbar-nav .nav-item .nav-link {
-      font-weight: 450;
-      padding: 1.1em 1em !important; }
-    #mainNav.navbar-shrink {
-      padding-top: 0;
-      padding-bottom: 0;
-      color: white;
-      background-color: #212529; }
-      #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.25em;
-        padding: 12px 0; } }
+    background-color: transparent;
+  }
+
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-weight: 450;
+    padding: 1.1em 1em !important;
+  }
+
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+    background-color: #212529;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
 
 body {
   margin: 0;
   overflow-x: hidden;
 }
 
-#test1 {
+#landing-video {
   width: 100%;
   height:100vh;
 }
@@ -199,17 +218,6 @@ section .content {
   visibility: hidden;
 }
 
-.fadeIn {
-  -webkit-animation: animat_show 0.8s;
-  animation: animat_show 0.8s;
-  visibility: visible !important;
-}
-
-@-webkit-keyframes animat_show{
-  0%{opacity:0}
-  100%{opacity:1}
-}
-
 .navigable-section * {
   box-sizing: border-box;
 }
@@ -226,6 +234,7 @@ section .content {
 .navigable-section ul li {
   display: inline;
   text-align: center;
+  cursor: pointer;
 }
 
 .navigable-section hr {
@@ -268,27 +277,9 @@ section .content {
   position: relative;
 }
 
-@-webkit-keyframes testa{
-  from {
-    left: 0%;
-    display: initial;
-  }
-
-  to {
-    /* left: auto; */
-    left: 100%;
-    display: none;
-  }
-}
-
 iframe {
   margin-top: 1em;
   margin-bottom: 1em;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
 }
 
 .flex-col {
@@ -431,21 +422,8 @@ iframe {
   color: rgba(65, 170, 230, 1.0);
 }
 
-.competition-nav {
-  cursor: pointer;
-}
-
-.team-nav {
-  cursor: pointer;
-}
-
 .display-none {
   display: none;
-}
-
-.left {
-  left: -200%;
-  opacity: 0;
 }
 
 .right {
@@ -465,4 +443,20 @@ iframe {
   max-width: 100%;
   height: auto;
   margin-top: 15px;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+@keyframes animat_show {
+  0%{opacity:0}
+  100%{opacity:1}
+}
+
+@-webkit-keyframes animat_show {
+  0%{opacity:0}
+  100%{opacity:1}
 }
