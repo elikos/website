@@ -210,6 +210,10 @@ section .content {
   100%{opacity:1}
 }
 
+.navigable-section * {
+  box-sizing: border-box;
+}
+
 .navigable-section a {
   display: inline-block;
   width: 100px;
@@ -219,27 +223,10 @@ section .content {
   color: #333;
 }
 
-.navigable-section .two:hover ~ hr, .navigable-section .two.active ~ hr {
-  margin-left: 50%;
-  transform: translateX(-100%);
-  background: rgb(140, 200, 60);
+.navigable-section ul li {
+  display: inline;
+  text-align: center;
 }
-
-.navigable-section .three:hover ~ hr, .navigable-section .three.active ~ hr {
-  margin-left: 50%;
-  transform: translateX(0%);
-  background: rgb(250, 150, 30);
-}
-
-.navigable-section .four:hover ~ hr, .navigable-section .four.active ~ hr {
-  margin-left: 50%;
-  transform: translateX(100%);
-  background: rgb(185, 30, 50);
-}
-
-/* .navigable-section .four:hover ~ hr {
-  margin-left: 75%;
-} */
 
 .navigable-section hr {
   height: .25rem;
@@ -247,19 +234,29 @@ section .content {
   margin: 0;
   background: rgb(65, 170, 230);
   border: none;
-  transition: .3s ease-in-out;
-
   margin-left: 50%;
+  transition: .3s ease-in-out;
+}
+
+/* The hover rule is more specific, so it overrides the active rule */
+.navigable-section .one.active ~ hr, .navigable-section li.one:hover ~ hr {
   transform: translateX(-200%);
+  background: rgb(65, 170, 230);
 }
 
-.navigable-section * {
-  box-sizing: border-box;
+.navigable-section .two.active ~ hr, .navigable-section li.two:hover ~ hr {
+  transform: translateX(-100%);
+  background: rgb(140, 200, 60);
 }
 
-.navigable-section ul li {
-  display: inline;
-  text-align: center;
+.navigable-section .three.active ~ hr, .navigable-section li.three:hover ~ hr {
+  transform: translateX(0%);
+  background: rgb(250, 150, 30);
+}
+
+.navigable-section .four.active ~ hr, .navigable-section li.four:hover ~ hr {
+  transform: translateX(100%);
+  background: rgb(185, 30, 50);
 }
 
 #competitions .competition-video, #competitions .competition-photo {
