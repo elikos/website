@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
   <head>
     <meta charset="UTF-8">
     <title>Élikos - Polytechnique Montréal</title>
@@ -59,7 +59,9 @@
           <source src="assets/videos/landing_video.mp4" type="video/mp4">
         </video>
         <div id="title">
-          <img src="assets/img/logo.png" class="logo">
+          <div class="logo-container">
+            <img src="assets/img/logo.png" class="logo">
+          </div>
           <p data-i18n="video.title"></p>
           
           <div class="scroll-down-button">
@@ -76,309 +78,310 @@
         </div>
       </div>
 
-      <section id="about">
-        <h1 data-i18n="about.title"></h1>
-        <div class="separator"></div>
-        <div class ="content">
-          <p data-i18n="about.description1"></p>
-          <p>
-            <span data-i18n="about.description2"></span>
-            <a href="http://www.aerialroboticscompetition.org/">International Aerial Robotics Competition</a>
-            <span data-i18n="about.description3"></span>
-            <a href="https://www.unmannedsystems.ca/home/students/student-competition-details/">Unmanned Systems Canada Student UAS</a>.
-          </p>
-        </div>
-        <div class="img-row">
-          <img class="hide" src="./assets/img/quad2017.jpg">
-          <img class="hide" src="./assets/img/ete_2017_tests.jpg">
-          <img class="hide" src="./assets/img/IARC_2017_action_team.jpg">
-        </div>  
-      </section>
-
-      <section id="competitions" class="alternate-background navigable-section">
-        <h1 data-i18n="competitions.title"></h1>
-        <div class="separator"></div>
-        <div class ="content">
-          <p data-i18n="competitions.description"></p>
-        </div>
-
-        <ul>
-          <li class="competition-nav one active" id="competition-2017-nav"><a>2017</a></li><!-- Comments remove unwanted spaces
-          --><li class="competition-nav two" id="competition-2016-nav"><a>2016</a></li><!--
-          --><li class="competition-nav three" id="competition-2015-nav"><a>2015</a></li><!--
-          --><li class="competition-nav four" id="competition-2014-nav"><a>2014</a></li><!--
-          --><hr>
-        </ul>
-
-        <div class="content">
-          <div class="flex-col competition" id="competition-2017">
-            <img class="competition-photo hide" src="assets/img/competitions/compe_2017.jpg"></img>
-            <p data-i18n="competitions.2017.content"></p>
-          </div>
-
-          <div class="flex-col competition display-none right" id="competition-2016">
-            <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/L3C6ntc_VUs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <p data-i18n="competitions.2016.content"></p>
-            <img class="competition-photo" src="assets/img/competitions/team_2016.jpg"></img>
-            <p data-i18n="competitions.2016.photo"></p>
-          </div>
-
-          <div class="flex-col competition display-none right" id="competition-2015">
-            <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/890d9nOqios?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <p data-i18n="competitions.2015.content"></p>
-            <img class="competition-photo" src="assets/img/competitions/compe_2015.jpg"></img>
-            <p data-i18n="competitions.2015.photo"></p>
-          </div>
-
-          <div class="flex-col competition display-none right" id="competition-2014">
-            <img class="competition-photo" src="assets/img/competitions/compe_2014.jpg"></img>
-            <p data-i18n="competitions.2014.content"></p>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="team" class="navigable-section">
-        <div>
-          <h1 data-i18n="team.title"></h1>
+      <div class="sections">
+        <section id="about">
+          <h1 data-i18n="about.title"></h1>
           <div class="separator"></div>
+          <div class ="content">
+            <p data-i18n="about.description1"></p>
+            <p>
+              <span data-i18n="about.description2"></span>
+              <a href="http://www.aerialroboticscompetition.org/">International Aerial Robotics Competition</a>
+              <span data-i18n="about.description3"></span>
+              <a href="https://www.unmannedsystems.ca/home/students/student-competition-details/">Unmanned Systems Canada Student UAS</a>.
+            </p>
+          </div>
+          <div class="img-row">
+            <img class="hide" src="./assets/img/quad2017.jpg">
+            <img class="hide" src="./assets/img/ete_2017_tests.jpg">
+            <img class="hide" src="./assets/img/IARC_2017_action_team.jpg">
+          </div>  
+        </section>
+
+        <section id="competitions" class="alternate-background navigable-section">
+          <h1 data-i18n="competitions.title"></h1>
+          <div class="separator"></div>
+          <div class ="content">
+            <p data-i18n="competitions.description"></p>
+          </div>
 
           <ul>
-            <li class="team-nav one active" id="team-2018-nav"><a>2018</a></li><!-- Comments remove unwanted spaces
-            --><li class="team-nav two" id="team-2017-nav"><a>2017</a></li><!--
-            --><li class="team-nav three" id="team-2016-nav"><a>2016</a></li><!--
-            --><li class="team-nav four" id="team-2015-nav"><a>2015</a></li><!--
+            <li class="competition-nav one active" id="competition-2017-nav"><a>2017</a></li><!-- Comments remove unwanted spaces
+            --><li class="competition-nav two" id="competition-2016-nav"><a>2016</a></li><!--
+            --><li class="competition-nav three" id="competition-2015-nav"><a>2015</a></li><!--
+            --><li class="competition-nav four" id="competition-2014-nav"><a>2014</a></li><!--
             --><hr>
           </ul>
-          
-          <div class ="content">
 
-            <div class="team team-container" id="team-2018">
-              <div class="full-team-container">
-                <img class="hide" src="./assets/img/team/team-2018.jpg">
-                <p data-i18n="team.2018.photo"></p>
-              </div>
+          <div class="content">
+            <div class="flex-col competition" id="competition-2017">
+              <img class="competition-photo hide" src="assets/img/competitions/compe_2017.jpg"></img>
+              <p data-i18n="competitions.2017.content"></p>
             </div>
 
-            <div class="team team-container display-none right" id="team-2017">
+            <div class="flex-col competition display-none right" id="competition-2016">
+              <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/L3C6ntc_VUs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p data-i18n="competitions.2016.content"></p>
+              <img class="competition-photo" src="assets/img/competitions/team_2016.jpg"></img>
+              <p data-i18n="competitions.2016.photo"></p>
+            </div>
 
-              <div class="member-container">
-                <img class="a" src="./assets/img/team/2017/chrichri.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Christophe Bédard</h3>
-                    <p data-i18n="team.2017.teamLead"></p>
-                  </div>
+            <div class="flex-col competition display-none right" id="competition-2015">
+              <iframe class="competition-video" width="488" height="275" src="https://www.youtube.com/embed/890d9nOqios?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p data-i18n="competitions.2015.content"></p>
+              <img class="competition-photo" src="assets/img/competitions/compe_2015.jpg"></img>
+              <p data-i18n="competitions.2015.photo"></p>
+            </div>
+
+            <div class="flex-col competition display-none right" id="competition-2014">
+              <img class="competition-photo" src="assets/img/competitions/compe_2014.jpg"></img>
+              <p data-i18n="competitions.2014.content"></p>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="team" class="navigable-section">
+          <div>
+            <h1 data-i18n="team.title"></h1>
+            <div class="separator"></div>
+
+            <ul>
+              <li class="team-nav one active" id="team-2018-nav"><a>2018</a></li><!-- Comments remove unwanted spaces
+              --><li class="team-nav two" id="team-2017-nav"><a>2017</a></li><!--
+              --><li class="team-nav three" id="team-2016-nav"><a>2016</a></li><!--
+              --><li class="team-nav four" id="team-2015-nav"><a>2015</a></li><!--
+              --><hr>
+            </ul>
+            
+            <div class ="content">
+
+              <div class="team team-container" id="team-2018">
+                <div class="full-team-container">
+                  <img class="hide" src="./assets/img/team/team-2018.jpg">
+                  <p data-i18n="team.2018.photo"></p>
                 </div>
               </div>
 
-              <div class="member-container">
-                <img class="b" src="./assets/img/team/2017/eva.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Eva Terriault</h3>
-                    <p data-i18n="team.2017.logisticsLead"></p>
+              <div class="team team-container display-none right" id="team-2017">
+
+                <div class="member-container">
+                  <img class="a" src="./assets/img/team/2017/chrichri.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Christophe Bédard</h3>
+                      <p data-i18n="team.2017.teamLead"></p>
+                    </div>
                   </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="b" src="./assets/img/team/2017/eva.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Eva Terriault</h3>
+                      <p data-i18n="team.2017.logisticsLead"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="c" src="./assets/img/team/2017/py.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Pierre-Yves Lajoie</h3>
+                      <p data-i18n="team.2017.techLead"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="d" src="./assets/img/team/2017/oli.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Olivier St-Amour</h3>
+                      <p data-i18n="team.2017.projectLead"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="e" src="./assets/img/team/2017/justine.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Justine Pepin</h3>
+                      <p data-i18n="team.2017.projectLeadF"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="f" src="./assets/img/team/2017/felix.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Félix Pepin</h3>
+                      <p data-i18n="team.2017.projectLead"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="g" src="./assets/img/team/2017/sverige.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Arnaud Paré-Vogt</h3>
+                      <p data-i18n="team.2017.projectLead"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="h" src="./assets/img/team/2017/riad.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Riad Gahlouz</h3>
+                      <p data-i18n="team.2017.projectLeadTreasurer"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member-container">
+                  <img class="i" src="./assets/img/team/2017/max.jpg"></img>
+                  <div class="member-bottom">
+                    <div>
+                      <h5>Max Colombié</h3>
+                      <p data-i18n="team.2017.marketingCoordinator"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="full-team-container">
+                  <img src="./assets/img/team/team-2017.jpg">
+                  <p data-i18n="team.2017.photo"></p>
+                </div>
+                
+              </div>
+
+              <div class="team team-container display-none right" id="team-2016">
+                <div class="full-team-container">
+                  <img src="./assets/img/team/team-2016.jpg">
+                  <p data-i18n="team.2016.photo"></p>
                 </div>
               </div>
 
-              <div class="member-container">
-                <img class="c" src="./assets/img/team/2017/py.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Pierre-Yves Lajoie</h3>
-                    <p data-i18n="team.2017.techLead"></p>
-                  </div>
+              <div class="team team-container display-none right" id="team-2015">
+                <div class="full-team-container">
+                  <img src="./assets/img/team/team-2015.jpg">
+                  <p data-i18n="team.2015.photo"></p>
                 </div>
-              </div>
-
-              <div class="member-container">
-                <img class="d" src="./assets/img/team/2017/oli.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Olivier St-Amour</h3>
-                    <p data-i18n="team.2017.projectLead"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="member-container">
-                <img class="e" src="./assets/img/team/2017/justine.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Justine Pepin</h3>
-                    <p data-i18n="team.2017.projectLeadF"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="member-container">
-                <img class="f" src="./assets/img/team/2017/felix.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Félix Pepin</h3>
-                    <p data-i18n="team.2017.projectLead"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="member-container">
-                <img class="g" src="./assets/img/team/2017/sverige.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Arnaud Paré-Vogt</h3>
-                    <p data-i18n="team.2017.projectLead"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="member-container">
-                <img class="h" src="./assets/img/team/2017/riad.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Riad Gahlouz</h3>
-                    <p data-i18n="team.2017.projectLeadTreasurer"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="member-container">
-                <img class="i" src="./assets/img/team/2017/max.jpg"></img>
-                <div class="member-bottom">
-                  <div>
-                    <h5>Max Colombié</h3>
-                    <p data-i18n="team.2017.marketingCoordinator"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="full-team-container">
-                <img src="./assets/img/team/team-2017.jpg">
-                <p data-i18n="team.2017.photo"></p>
               </div>
               
             </div>
+          </div>      
+        </section>
 
-            <div class="team team-container display-none right" id="team-2016">
-              <div class="full-team-container">
-                <img src="./assets/img/team/team-2016.jpg">
-                <p data-i18n="team.2016.photo"></p>
-              </div>
+        <section id="partners" class="alternate-background">
+          <h1 data-i18n="partners.title"></h1>
+          <div class="separator"></div>
+          <div class ="content">
+            <h4 data-i18n="partners.platinum"></h4>
+            <div class="sponsor-row">
+              <a target="_blank" href="https://www.polymtl.ca/">
+                <div class="sponsor">
+                  <img class="hide" src="assets/img/sponsors/2017-2018/polytechnique.png">
+                </div>
+              </a>
             </div>
 
-            <div class="team team-container display-none right" id="team-2015">
-              <div class="full-team-container">
-                <img src="./assets/img/team/team-2015.jpg">
-                <p data-i18n="team.2015.photo"></p>
+            <h4 data-i18n="partners.gold"></h4>
+            <div class="sponsor-row">
+              <a target="_blank" href="https://www.desjardins.com/ca/">
+                <div class="sponsor">
+                  <img class="hide" src="assets/img/sponsors/2017-2018/desjardins.png">
+                </div>
+              </a>
+              <a target="_blank" href="https://www.aep.polymtl.ca/faie/">
+                <div class="sponsor">
+                  <img class="hide" src="assets/img/sponsors/2017-2018/faie.png"></a>
+                </div>
+              </a>
+            </div>
+
+            <h4 data-i18n="partners.silver"></h4>
+            <div class="sponsor-row">
+              <a target="_blank" href="https://www.solidworks.com/">
+                <div class="sponsor">
+                  <img class="hide" src="assets/img/sponsors/2017-2018/solidworks.png">
+                </div>
+              </a>
+              <a target="_blank" href="https://www.cae.com/">
+                <div class="sponsor">
+                  <img class="hide" src="assets/img/sponsors/2017-2018/cae.png">
+                </div>
+              </a>
+              <a target="_blank" href="https://www.mathworks.com/">
+                <div class="sponsor">
+                  <img class="hide" src="assets/img/sponsors/2017-2018/mathworks.png">
+                </div>
+              </a>
+            </div>
+
+            <h4 data-i18n="partners.bronze"></h4>
+            <div class="sponsor-row">
+              <a target="_blank" href="https://www.aep.polymtl.ca/">
+                <div class="sponsor">
+                  <img class="hide" src="assets/img/sponsors/2017-2018/aep.png">
+                </div>
+              </a>
+            </div>
+          </div>        
+        </section>
+
+        <section id="contact">
+          <h1 data-i18n="contact.title"></h1>
+          <div class="separator"></div>
+          <div class ="content">
+            <p data-i18n="contact.description"></p>
+            <div class="row" style="margin-top: 3em;">
+              <div class="col-lg-4 ml-auto text-center hide">
+                <i class="fa fa-building fa-3x mb-3 sr-contact"></i>
+                <p>
+                    Polytechnique Montréal<br>
+                    2500, chemin de Polytechnique<br>
+                    Local A-323<br>
+                    Montréal (Québec) H3T 1J4
+                </p>
+              </div>
+              <div class="col-lg-4 mr-auto text-center hide">
+                <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                <p>
+                    info@elikos.polymtl.ca<br>
+                    directeur@elikos.polymtl.ca<br>
+                    commandites@elikos.polymtl.ca<br>
+                    webmaster@elikos.polymtl.ca
+                </p>
               </div>
             </div>
-            
-          </div>
-        </div>      
-      </section>
-
-      <section id="partners" class="alternate-background">
-        <h1 data-i18n="partners.title"></h1>
-        <div class="separator"></div>
-        <div class ="content">
-          <h4 data-i18n="partners.platinum"></h4>
-          <div class="sponsor-row">
-            <a target="_blank" href="https://www.polymtl.ca/">
-              <div class="sponsor">
-                <img class="hide" src="assets/img/sponsors/2017-2018/polytechnique.png">
-              </div>
-            </a>
-          </div>
-
-          <h4 data-i18n="partners.gold"></h4>
-          <div class="sponsor-row">
-            <a target="_blank" href="https://www.desjardins.com/ca/">
-              <div class="sponsor">
-                <img class="hide" src="assets/img/sponsors/2017-2018/desjardins.png">
-              </div>
-            </a>
-            <a target="_blank" href="https://www.aep.polymtl.ca/faie/">
-              <div class="sponsor">
-                <img class="hide" src="assets/img/sponsors/2017-2018/faie.png"></a>
-              </div>
-            </a>
-          </div>
-
-          <h4 data-i18n="partners.silver"></h4>
-          <div class="sponsor-row">
-            <a target="_blank" href="https://www.solidworks.com/">
-              <div class="sponsor">
-                <img class="hide" src="assets/img/sponsors/2017-2018/solidworks.png">
-              </div>
-            </a>
-            <a target="_blank" href="https://www.cae.com/">
-              <div class="sponsor">
-                <img class="hide" src="assets/img/sponsors/2017-2018/cae.png">
-              </div>
-            </a>
-            <a target="_blank" href="https://www.mathworks.com/">
-              <div class="sponsor">
-                <img class="hide" src="assets/img/sponsors/2017-2018/mathworks.png">
-              </div>
-            </a>
-          </div>
-
-          <h4 data-i18n="partners.bronze"></h4>
-          <div class="sponsor-row">
-            <a target="_blank" href="https://www.aep.polymtl.ca/">
-              <div class="sponsor">
-                <img class="hide" src="assets/img/sponsors/2017-2018/aep.png">
-              </div>
-            </a>
-          </div>
-        </div>        
-      </section>
-
-      <section id="contact">
-        <h1 data-i18n="contact.title"></h1>
-        <div class="separator"></div>
-        <div class ="content">
-          <p data-i18n="contact.description"></p>
-          <div class="row" style="margin-top: 3em;">
-            <div class="col-lg-4 ml-auto text-center hide">
-              <i class="fa fa-building fa-3x mb-3 sr-contact"></i>
-              <p>
-                  Polytechnique Montréal<br>
-                  2500, chemin de Polytechnique<br>
-                  Local A-323<br>
-                  Montréal (Québec) H3T 1J4
-              </p>
-            </div>
-            <div class="col-lg-4 mr-auto text-center hide">
-              <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-              <p>
-                  info@elikos.polymtl.ca<br>
-                  directeur@elikos.polymtl.ca<br>
-                  commandites@elikos.polymtl.ca<br>
-                  webmaster@elikos.polymtl.ca
-              </p>
-            </div>
-          </div>
-        </div>        
-      </section>
-
+          </div>        
+        </section>
+      </div>
     </main>
     <footer>
       <div class="bottom">
-        <div class="row justify-content-md-center">
-          <div class="col-sm-auto text-center bottom-link-1">
+        <div class="social-media-links">
+          <div class="social-media-link">
             <a href="https://github.com/elikos"><i class="fa fa-github fa-3x"></i></a>
           </div>
-          <div class="col-sm-auto text-center bottom-link-2">
+          <div class="social-media-link">
             <a href="https://facebook.com/ElikosPoly"><i class="fa fa-facebook-square fa-3x"></i></a>
           </div>
-          <div class="col-sm-auto text-center bottom-link-3">
+          <div class="social-media-link">
             <a href="https://instagram.com/elikos.polymtl/"><i class="fa fa-instagram fa-3x"></i></a>
           </div>
-          <div class="col-sm-auto text-center bottom-link-4">
+          <div class="social-media-link">
             <a href="https://twitter.com/ElikosPoly"><i class="fa fa-twitter-square fa-3x"></i></a>
           </div>
-          <div class="col-sm-auto text-center bottom-link-5">
+          <div class="social-media-link">
             <a href="https://www.linkedin.com/company/elikos-polymtl/"><i class="fa fa-linkedin-square fa-3x"></i></a>
           </div>
         </div>
