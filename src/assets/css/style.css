@@ -256,6 +256,12 @@ section .content {
   width: 300px;
 }
 
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .hide {
   visibility: hidden;
 }
