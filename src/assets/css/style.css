@@ -301,28 +301,48 @@ section .content {
 }
 
 /* The hover rule is more specific, so it overrides the active rule */
-.navigable-section .one.active ~ hr, .navigable-section li.one:hover ~ hr {
+.navigable-section .one-four.active ~ hr, .navigable-section li.one-four:hover ~ hr {
   transform: translateX(-200%);
   background: rgb(65, 170, 230);
 }
 
-.navigable-section .two.active ~ hr, .navigable-section li.two:hover ~ hr {
+.navigable-section .two-four.active ~ hr, .navigable-section li.two-four:hover ~ hr {
   transform: translateX(-100%);
   background: rgb(140, 200, 60);
 }
 
-.navigable-section .three.active ~ hr, .navigable-section li.three:hover ~ hr {
+.navigable-section .three-four.active ~ hr, .navigable-section li.three-four:hover ~ hr {
   transform: translateX(0%);
   background: rgb(250, 150, 30);
 }
 
-.navigable-section .four.active ~ hr, .navigable-section li.four:hover ~ hr {
+.navigable-section .four-four.active ~ hr, .navigable-section li.four-four:hover ~ hr {
   transform: translateX(100%);
   background: rgb(185, 30, 50);
 }
 
-.navigable-section .five.active ~ hr, .navigable-section li.five:hover ~ hr {
-  transform: translateX(200%);
+.navigable-section .one-five.active ~ hr, .navigable-section li.one-five:hover ~ hr {
+  transform: translateX(-250%);
+  background: rgb(65, 170, 230);
+}
+
+.navigable-section .two-five.active ~ hr, .navigable-section li.two-five:hover ~ hr {
+  transform: translateX(-150%);
+  background: rgb(140, 200, 60);
+}
+
+.navigable-section .three-five.active ~ hr, .navigable-section li.three-five:hover ~ hr {
+  transform: translateX(-50%);
+  background: rgb(250, 150, 30);
+}
+
+.navigable-section .four-five.active ~ hr, .navigable-section li.four-five:hover ~ hr {
+  transform: translateX(50%);
+  background: rgb(185, 30, 50);
+}
+
+.navigable-section .five-five.active ~ hr, .navigable-section li.five-five:hover ~ hr {
+  transform: translateX(150%);
   background: rgb(65, 170, 230);
 }
 
