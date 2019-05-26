@@ -321,6 +321,11 @@ section .content {
   background: rgb(185, 30, 50);
 }
 
+.navigable-section .five.active ~ hr, .navigable-section li.five:hover ~ hr {
+  transform: translateX(200%);
+  background: rgb(65, 170, 230);
+}
+
 #competitions .competition-video, #competitions .competition-photo {
   margin: 1em auto;
   width: 488px;

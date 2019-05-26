@@ -1,6 +1,6 @@
 $(function() {
     initTransitions("competition", [2017, 2016, 2015, 2014]);
-    initTransitions("team", [2018, 2017, 2016, 2015]);
+    initTransitions("team", [2018, 2017, 2016, 2015, 2014]);
 });
 
 function navClickTansition(event, navs, contentDivs) {
