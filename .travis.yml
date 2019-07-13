@@ -1,10 +1,10 @@
-# travis-ci to deploy website to FTP server using git-ftp
+# travis-ci to deploy website to FTP server using lftp
 dist: trusty
 language: generic
 addons:
   apt:
     packages:
-    - git-ftp
+    - lftp
 branches:
   only:
     - master

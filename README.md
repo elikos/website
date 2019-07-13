@@ -2,12 +2,22 @@
 
 ## Deploy
 
-See [`git-ftp`](https://github.com/git-ftp/git-ftp).
-
-First, [install `git-ftp`](https://github.com/git-ftp/git-ftp/blob/master/INSTALL.md).
-
-Set the environment variables for `FTP_URL`, `FTP_USER`, and `FTP_PASSWORD`, then
+Install `lftp`:
 
 ```
-./deploy.sh
+$ sudo apt-get install lftp
+```
+
+Set the following environment variables:
+
+```
+$ export FTP_URL=
+$ export FTP_USER=
+$ export FTP_PASSWORD=
+```
+
+Then do:
+
+```
+$ ./deploy.sh
 ```
