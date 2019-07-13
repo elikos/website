@@ -19,5 +19,5 @@ $ export FTP_PASSWORD=
 Then do:
 
 ```
-$ ./deploy.sh
+$ ./scripts/deploy.sh
 ```
